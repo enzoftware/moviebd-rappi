@@ -1,4 +1,4 @@
 # :movie_camera: Movie DB
-## Android Test Rappie
+## Android Test Rappi
 ---
 ![](rappie.png)
