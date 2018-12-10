@@ -1,4 +1,2 @@
-# :movie_camera: Movie DB
-## Android Test Rappi
+# :elephant: PostgreSQL-Sequelize API
 ---
-![](rappie.png)
