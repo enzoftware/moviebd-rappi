@@ -1,0 +1,32 @@
+{
+  "name": "sequelize-postgresql-api",
+  "version": "1.0.0",
+  "description": "Multilayer rest API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enzoftware/sequelize-postgresql-api.git"
+  },
+  "author": "enzoftware",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enzoftware/sequelize-postgresql-api/issues"
+  },
+  "homepage": "https://github.com/enzoftware/sequelize-postgresql-api#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "http": "0.0.0",
+    "jsonwebtoken": "^8.0.1",
+    "lodash": "^4.17.4",
+    "pg": "^7.3.0",
+    "sequelize": "^4.13.3",
+    "sequelize-values": "^1.1.0"
+  }
+}
