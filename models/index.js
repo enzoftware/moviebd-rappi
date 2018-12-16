@@ -23,6 +23,7 @@ const Order = sequelize.define('ordeer', {
 
 
 User.hasMany(Order, { foreignKey: 'user_id' });
+
 module.exports = {
     User, 
     Order

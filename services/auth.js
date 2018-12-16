@@ -12,6 +12,26 @@ const authenticate = params => {
         raw : true
     }).then( user => {
         
+        if(!user) {
+            throw new Error("Authentication failed. User not found");
+        }
+
+        if(!bycript.compareSync(params.password || '', user.password)){
+            throw new Error("Authentication failed. Wrong password");
+        }
+
+        const payload = {
+            username : user.username,
+            id : user.id,
+            time : new Date()
+        };
+
+        var token = jwt.sign(payload, config.jwtSecret, {
+            expiresIn : config.tokenExpireTime
+        });
+
+        return token;
+
     });
 }
 
