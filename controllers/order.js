@@ -13,7 +13,7 @@ function getOrder (req, res){
 function addOrder (req, res){
     orderService.add({
         title : req.body.title,
-        user_id : 2
+        user_id : req.user.id
     })
     .then(data=>res.send(data));
 }

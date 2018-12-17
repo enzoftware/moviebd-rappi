@@ -6,7 +6,7 @@ const User = sequelize.define('user', {
     password : Sequelize.STRING
 });
 
-const Order = sequelize.define('ordeer', {
+const Order = sequelize.define('order', {
     title : Sequelize.STRING,
     date : {
         type : Sequelize.DATE,
